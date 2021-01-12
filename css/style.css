@@ -1,0 +1,16 @@
+.navbar{
+    background-color: aqua;
+}
+
+.header{
+    height: 600px;
+    width: 70%;
+    background-image: url("header2.jpg");
+    background-size:cover
+}
+
+.container{
+    display: flex;
+    background-color: #e7edfd;
+    
+}
