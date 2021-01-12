@@ -12,7 +12,6 @@
 
 
     <!-- navbar-->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">أجــــار</a>
@@ -27,50 +26,215 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- Header -->
     <div class="header">
+
+        <!-- Information Side -->
         <div class="header-child-1">
             <div class="title">
                 <h1 class="titleH1"> المنصة الأفضل لتأجير السيارات </h1>
                 <h3 class="titleH3">فيد و استفيد </h3>
             </div>
-            <div class="form">
 
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-                  
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <span class="input-group-text" id="basic-addon2">@example.com</span>
-                  </div>
-                  
-                  <label for="basic-url" class="form-label">Your vanity URL</label>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                  </div>
-                  
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">$</span>
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                    <span class="input-group-text">.00</span>
-                  </div>
-                  
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                    <span class="input-group-text">@</span>
-                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                  </div>
-                  
-                  <div class="input-group">
-                    <span class="input-group-text">With textarea</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                  </div>
+            <!-- Choose if your car or you want a car -->
+            <div class="myNav font">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="padding: 0px;">
+                    <li class="nav-item " role="presentation">
+                        <a class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" href="#pills-home"
+                            role="tab" aria-controls="pills-home" aria-selected="true">استأجر</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact"
+                            role="tab" aria-controls="pills-contact" aria-selected="false">أجــر</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
 
+                    <!-- You want to rent -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+                        <!-- Form -->
+                        <div class="form">
+
+                            <!-- Title -->
+                            <div class="mb-2">
+                                <h3 class="titleH4 mb-2">ابحث عن تأجير سيارة</h3>
+                            </div>
+
+                            <!-- Choos car -->
+                            <div class="btn-group mb-3" role="group" aria-label="Basic checkbox toggle button group"
+                                dir="">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck1">سيارات</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck2">شاحنات</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck3">سيارات فارهة</label>
+                            </div>
+
+
+                            <!-- Area -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="inputState">المنطقة</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>اختر المنطقة</option>
+                                    <option>الروضة</option>
+                                    <option>السرة</option>
+                                    <option>الفروانية</option>
+                                    <option>النزهة</option>
+                                    <option>القادسية</option>
+                                    <option>مبارك الكبير</option>
+                                    <option>الصليبيخات</option>
+                                    <option>العديلية</option>
+                                    <option>السالمية</option>
+                                    <option>القرين</option>
+                                    <option>الدسمة</option>
+                                    <option>ضاحية عبدالله السالم</option>
+                                    <option>المرقاب</option>
+                                    <option>بنيدالقار</option>
+                                    <option>سلوى</option>
+                                    <option>الرميثية</option>
+                                    <option>الدعية</option>
+                                    <option>الشعب</option>
+                                    <option>الفنيطيس</option>
+                                    <option>جابر الأحمد</option>
+                                </select>
+                            </div>
+
+                            <!-- Pickup time -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
+                                    الاستلام</label>
+                                <div class="col-12">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
+                                        id="example-datetime-local-input">
+                                </div>
+                            </div>
+
+                            <!-- Return time -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
+                                    التسليم</label>
+                                <div class="col-12">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
+                                        id="example-datetime-local-input">
+                                </div>
+                            </div>
+
+                            <!-- Conditions and Search button -->
+                            <div class="form-group col-md-12 mt-2" dir="rtl">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> أوافق على الشروط و الأحكام
+                                    </label>
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button type="submit" class="btn btn-dark mt-2">ابـحـث</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!--  Rent -->
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <!-- Form -->
+                        <div class="form">
+
+                            <!-- Title -->
+                            <div class="mb-2">
+                                <h3 class="titleH4 mb-2">ابحث عن تأجير سيارة</h3>
+                            </div>
+
+                            <!-- Choos car -->
+                            <div class="btn-group mb-3" role="group" aria-label="Basic checkbox toggle button group"
+                                dir="">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck1">سيارات</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck2">شاحنات</label>
+
+                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-outline-dark" for="btncheck3">سيارات فارهة</label>
+                            </div>
+
+
+                            <!-- Area -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="inputState">المنطقة</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>اختر المنطقة</option>
+                                    <option>الروضة</option>
+                                    <option>السرة</option>
+                                    <option>الفروانية</option>
+                                    <option>النزهة</option>
+                                    <option>القادسية</option>
+                                    <option>مبارك الكبير</option>
+                                    <option>الصليبيخات</option>
+                                    <option>العديلية</option>
+                                    <option>السالمية</option>
+                                    <option>القرين</option>
+                                    <option>الدسمة</option>
+                                    <option>ضاحية عبدالله السالم</option>
+                                    <option>المرقاب</option>
+                                    <option>بنيدالقار</option>
+                                    <option>سلوى</option>
+                                    <option>الرميثية</option>
+                                    <option>الدعية</option>
+                                    <option>الشعب</option>
+                                    <option>الفنيطيس</option>
+                                    <option>جابر الأحمد</option>
+                                </select>
+                            </div>
+
+                            <!-- Pickup time -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
+                                    الاستلام</label>
+                                <div class="col-12">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
+                                        id="example-datetime-local-input">
+                                </div>
+                            </div>
+
+                            <!-- Return time -->
+                            <div class="form-group col-md-12" dir="rtl">
+                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
+                                    التسليم</label>
+                                <div class="col-12">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
+                                        id="example-datetime-local-input">
+                                </div>
+                            </div>
+
+                            <!-- Conditions and Search button -->
+                            <div class="form-group col-md-12 mt-2" dir="rtl">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> أوافق على الشروط و الأحكام
+                                    </label>
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button type="submit" class="btn btn-dark mt-2">ابـحـث</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
     <div class="header-child-2">
 
     </div>
