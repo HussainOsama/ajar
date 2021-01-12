@@ -1,12 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
 .navbar{
     background-color: aqua;
 }
 
+.navbar-brand{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+}
+
 .header{
-    height: 600px;
-    width: 70%;
-    background-image: url("header2.jpg");
-    background-size:cover
+    height: 800px;
+    background-image: url("header.jpg");
+    background-size:cover;
+    display: flex;
+}
+
+.header-child-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: khaki;
+}
+
+.header-child-2{
+    width: 50%;
+
+}
+
+.title{
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    padding: 60px 100px;
+}
+
+.titleH1{
+    font-weight: 900;
+}
+
+.titleH3{
+    font-weight: 700;
+    text-align: end;
+}
+
+.form{
+    direction: ltr;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin: 40px 80px;
+    padding: 20px 20px;
+    border-radius: 12px;
 }
 
 .container{
