@@ -120,7 +120,7 @@
 }
 
 .body2-child-1{
-    
+
     
 }
 
@@ -240,4 +240,13 @@ p,
 
 .icon-blue {
     color: #3682ff
+}
+
+
+.nav > .nav-item > .nav-link{
+    color: black;
+    background-color: white;
+}
+.nav > .nav-item > .active{
+    background-color: #dc7336;
 }
