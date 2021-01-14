@@ -70,7 +70,7 @@
 
 .container{
     display: flex;
-    background-color: #e7edfd;
+    background-color: white;
     
 }
 
@@ -113,7 +113,7 @@
 
 .body2{
     display: flex;
-    height: 400px;
+    height: 500px;
     background-color: #3b4949;
     flex-direction: column;
 }
@@ -130,7 +130,7 @@
 
 .container {
     margin-top: 40px;
-    padding: 10px;
+    padding: 60px 10px;
     border-radius: 12px;
 }
 
