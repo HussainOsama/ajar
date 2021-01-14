@@ -7,7 +7,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
 </head>
 
@@ -154,80 +154,39 @@
 
                             <!-- Title -->
                             <div class="mb-2">
-                                <h3 class="titleH4 mb-2">ابحث عن تأجير سيارة</h3>
-                            </div>
-
-                            <!-- Choos car -->
-                            <div class="btn-group mb-3" role="group" aria-label="Basic checkbox toggle button group"
-                                dir="">
-                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                                <label class="btn btn-outline-dark" for="btncheck1">سيارات</label>
-
-                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                                <label class="btn btn-outline-dark" for="btncheck2">شاحنات</label>
-
-                                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                                <label class="btn btn-outline-dark" for="btncheck3">سيارات فارهة</label>
+                                <h3 class="titleH4 mb-2"> سجل دخولك</h3>
                             </div>
 
 
-                            <!-- Area -->
-                            <div class="form-group col-md-12" dir="rtl">
-                                <label for="inputState">المنطقة</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected>اختر المنطقة</option>
-                                    <option>الروضة</option>
-                                    <option>السرة</option>
-                                    <option>الفروانية</option>
-                                    <option>النزهة</option>
-                                    <option>القادسية</option>
-                                    <option>مبارك الكبير</option>
-                                    <option>الصليبيخات</option>
-                                    <option>العديلية</option>
-                                    <option>السالمية</option>
-                                    <option>القرين</option>
-                                    <option>الدسمة</option>
-                                    <option>ضاحية عبدالله السالم</option>
-                                    <option>المرقاب</option>
-                                    <option>بنيدالقار</option>
-                                    <option>سلوى</option>
-                                    <option>الرميثية</option>
-                                    <option>الدعية</option>
-                                    <option>الشعب</option>
-                                    <option>الفنيطيس</option>
-                                    <option>جابر الأحمد</option>
-                                </select>
-                            </div>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col">
+                                    <form action="#" method="post">
+                                        <div class="form-group first">
+                                            <label for="username">Username</label>
+                                            <input type="text" class="form-control" placeholder="your-email@gmail.com"
+                                                id="username">
+                                        </div>
+                                        <div class="form-group last mb-3">
+                                            <label for="password">Password</label>
+                                            <input type="password" class="form-control" placeholder="Your Password"
+                                                id="password">
+                                        </div>
 
-                            <!-- Pickup time -->
-                            <div class="form-group col-md-12" dir="rtl">
-                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
-                                    الاستلام</label>
-                                <div class="col-12">
-                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
-                                        id="example-datetime-local-input">
-                                </div>
-                            </div>
+                                        <div class="d-flex  align-items-center">
 
-                            <!-- Return time -->
-                            <div class="form-group col-md-12" dir="rtl">
-                                <label for="example-datetime-local-input" class="col-0 col-form-label">وقت
-                                    التسليم</label>
-                                <div class="col-12">
-                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00"
-                                        id="example-datetime-local-input">
+                                            <span class="ml-auto"><a href="#" class="forgot-pass">Forgot
+                                                    Password</a></span>
+                                        </div>
+
+                                    </form>
                                 </div>
                             </div>
 
                             <!-- Conditions and Search button -->
                             <div class="form-group col-md-12 mt-2" dir="rtl">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> أوافق على الشروط و الأحكام
-                                    </label>
-                                </div>
+
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <a href="/content.html" class="btn btn-dark mt-2">ابـحـث</a>
+                                    <a href="/content.html" class="btn btn-dark mt-2">تسجيل دخول</a>
                                 </div>
                             </div>
                         </div>
@@ -237,53 +196,6 @@
         </div>
     </div>
 
-
-
-    <!-- <div class="progress">
-        <h2 class="text-center p-3">Our Process</h2>
-        <div class="container p-4">
-            <div class="row">
-                <div class="offset-md-3 col-md-6">
-                    <div class="left-box">
-                        <h2>Planning</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="right-box"><img src="/img/flow-chart.png" alt=""></div>
-                </div>
-                <div class="process"><img src="/img/process.png" alt=""></div>
-            </div>
-            <div class="row">
-                <div class="offset-md-3 col-md-6">
-                    <div class="right-box"><img src="/img/briefing.png" alt=""></div>
-                    <div class="left-box">
-                        <h2>Design </h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-
-                </div>
-                <div class="process"><img src="/img/process.png" alt=""></div>
-            </div>
-            <div class="row">
-                <div class="offset-md-3 col-md-6">
-                    <div class="left-box">
-                        <h2>Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="right-box"><img src="/img/coding.png" alt=""></div>
-                </div>
-                <div class="process"><img src="/img/process.png" alt=""></div>
-            </div>
-            <div class="row">
-                <div class="offset-md-3 col-md-6">
-                    <div class="right-box"><img src="/img/checklist.png" alt=""></div>
-                    <div class="left-box">
-                        <h2>Testing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <div class="body1">
         <div class="body-child-1" data-aos="fade-left">
